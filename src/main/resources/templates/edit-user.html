@@ -40,7 +40,7 @@
         <input type="text" th:field="*{password}" id="password" required/>
         <div class="error" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
       </div>
-      <select th:field="*{roles}" >
+      <select th:field="*{roles}" multiple >
         <option th:value="'1'" th:text="USER"></option>
         <option th:value="'2'" th:text="ADMIN"></option>
       </select>
